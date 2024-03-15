@@ -1,5 +1,8 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@font-face {
+  font-family: "Runboy"; /*Can be any text*/
+  src: local("Runboy"), url("./fonts/Runboy\ Free\ Trial.woff") format("woff");
+}
+
+body {
+  font-family: "Runboy";
 }
