@@ -16,7 +16,7 @@ function TopButtons() {
     },
     {
       id: 4,
-      name: "Tokyo",
+      name: "Rome",
     },
     {
       id: 5,
