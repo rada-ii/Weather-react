@@ -2,9 +2,9 @@ import React from "react";
 
 function HourlyForecast({ hourlyForecast }) {
   return (
-    <div className="mt-4 text-center">
-      <h2 className="text-2xl font-bold my-8">Hourly Forecast</h2>
-      <div className="grid lg:grid-cols-4 grid-cols-1 ">
+    <div className="mt-2 text-center">
+      <h2 className="text-2xl font-bold mb-4">Hourly Forecast</h2>
+      <div className="grid lg:grid-cols-4 grid-cols-1">
         {hourlyForecast.map((item) => (
           <div key={item.dt}>
             <p className="font-extrabold">

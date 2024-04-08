@@ -1,9 +1,11 @@
-@font-face {
-  font-family: "Runboy"; /*Can be any text*/
+/* @font-face {
+  font-family: "Runboy"; 
   src: local("Runboy"), url("./fonts/Runboy\ Free\ Trial.woff") format("woff");
 }
+*/
 
 body {
-  font-family: "Runboy";
-  /* local font */
+  background-image: "./assets/suny.webp" !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
