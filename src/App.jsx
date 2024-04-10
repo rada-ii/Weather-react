@@ -1,7 +1,10 @@
+// App.js
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Weather from "./components/Weather";
-import HourlyForecast from "./components/HourlyForecast";
+import Search from "./components/serach/Search";
+import WeatherDisplay from "./components/wather-display/Weather";
+import HourlyForecast from "./components/hourly-forecast/HourlyForecast";
 import "./App.css";
 
 function App() {
@@ -70,35 +73,16 @@ function App() {
   return (
     <div className="container mx-auto text-center bg-gradient-to-r from-yellow-300 from-1% via-sky-500 to-emerald-500 via-70%  to-red-300 to-90% ">
       <div className=" p-2 rounded-md">
-        <input
-          type="text"
-          placeholder="Enter city name..."
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-          onKeyPress={(e) => {
-            if (e.key === "Enter") {
-              handleSearch();
-            }
-          }}
-          className="border border-gray-300 rounded px-4 py-2 mt-4 mb-2"
+        <Search
+          city={city}
+          setCity={setCity}
+          handleSearch={handleSearch}
+          handleLocationWeather={handleLocationWeather}
         />
-        <button
-          onClick={handleSearch}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Search
-        </button>
-        <button
-          onClick={handleLocationWeather}
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4"
-        >
-          Get My Location
-        </button>
-
         {loading && <p>Loading...</p>}
-
-        {weather && <Weather weather={weather} currentTime={currentTime} />}
-
+        {weather && (
+          <WeatherDisplay weather={weather} currentTime={currentTime} />
+        )}
         {hourlyForecast && <HourlyForecast hourlyForecast={hourlyForecast} />}
       </div>
     </div>
