@@ -6,7 +6,7 @@ A modern weather application built with React and Vite that provides real-time w
 
 - 🌍 **Current Weather** - Get real-time weather data for any city
 - 🔍 **City Search** - Search for weather information by city name
-- 📱 **Responsive Design** - Optimized for all device sizes
+- 📱 **Responsive Design** 
 - 🎨 **Clean UI** - Modern interface with weather icons and visual indicators
 - ⚡ **Fast Loading** - Powered by Vite for optimal performance
 
