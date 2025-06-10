@@ -10,6 +10,11 @@ A modern weather application built with React and Vite that provides real-time w
 - 🎨 **Clean UI** - Modern interface with weather icons and visual indicators
 - ⚡ **Fast Loading** - Powered by Vite for optimal performance
 
+## 🚀 Live Demo
+[https://weather-react-practice.vercel.app/](https://weather-react-practice.vercel.app/)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **React 18** - Modern React with hooks and functional components
@@ -17,9 +22,6 @@ A modern weather application built with React and Vite that provides real-time w
 - **CSS3** - Custom styling with responsive design
 - **Weather API** - Real-time weather data integration
 - **ESLint** - Code quality and consistency
-
-## 🚀 Live Demo
-[https://weather-react-practice.vercel.app/](https://weather-react-practice.vercel.app/)
 
 ## 🚀 Getting Started
 
